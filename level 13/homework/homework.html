@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რეგისტრაცია და შესვლა</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap
+    " rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background-color: white;
+            width: 100%;
+            max-width: 450px;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            text-align: center;
+            color: #333;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border 0.3s;
+        }
+        .input-group input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        .input-group label {
+            position: absolute;
+            top: 0;
+            left: 15px;
+            font-size: 14px;
+            color: #666;
+            transition: 0.3s;
+            pointer-events: none;
+        }
+        .input-group input:focus + label,
+        .input-group input:not(:placeholder-shown) + label {
+            top: -18px;
+            font-size: 12px;
+            color: #007bff;
+        }
+        .form-btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .form-btn:hover {
+            background-color: #0056b3;
+        }
+        .form-footer {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .form-footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .switch-form {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        .switch-form a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .switch-form a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>რეგისტრაცია</h2>
+    <form action="/submit_registration" method="post">
+        <div class="input-group">
+            <input type="email" name="gmail" id="gmail" placeholder=" " required>
+            <label for="gmail">Gmail</label>
+        </div>
+        <div class="input-group">
+            <input type="text" name="first_name" id="first_name" placeholder=" " required>
+            <label for="first_name">სახელი</label>
+        </div>
+        <div class="input-group">
+            <input type="text" name="last_name" id="last_name" placeholder=" " required>
+            <label for="last_name">გვარი</label>
+        </div>
+        <div class="input-group">
+            <input type="number" name="age" id="age" placeholder=" " required>
+            <label for="age">ასაკი</label>
+        </div>
+        <div class="input-group">
+            <input type="password" name="password" id="password" placeholder=" " required>
+            <label for="password">პაროლი</label>
+        </div>
+        <div class="input-group">
+            <input type="password" name="confirm_password" id="confirm_password" placeholder=" " required>
+            <label for="confirm_password">გაიმეორეთ პაროლი</label>
+        </div>
+        <button type="submit" class="form-btn">რეგისტრაცია</button>
+    </form>
+
+    <div class="switch-form">
+        <a href="/login">შესვლა</a>
+        <a href="#">დაგავიწყდა პაროლი?</a>
+    </div>
+</div>
+
+</body>
+</html>

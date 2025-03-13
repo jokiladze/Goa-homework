@@ -1,0 +1,246 @@
+<!--1. შექმენით საიტი რეგისტრაციის შესახებ(gmail,სახელი,გვარი,ასაკი,პაროლი 2ჯერ ) -->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რეგისტრაცია</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+            font-weight: 500;
+        }
+        .input-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: border 0.3s;
+        }
+        .input-group input:focus {
+            border-color: #5fbae9;
+            outline: none;
+        }
+        .input-group label {
+            position: absolute;
+            top: 0;
+            left: 15px;
+            font-size: 14px;
+            color: #666;
+            transition: 0.3s;
+            pointer-events: none;
+        }
+        .input-group input:focus + label,
+        .input-group input:not(:placeholder-shown) + label {
+            top: -18px;
+            font-size: 12px;
+            color: #5fbae9;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #5fbae9;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #4a9ed8;
+        }
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .form-footer a {
+            color: #5fbae9;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>რეგისტრაცია</h2>
+    <form action="/submit_registration" method="post">
+        <div class="input-group">
+            <input type="email" name="gmail" id="gmail" placeholder=" " required>
+            <label for="gmail">Gmail</label>
+        </div>
+        <div class="input-group">
+            <input type="text" name="first_name" id="first_name" placeholder=" " required>
+            <label for="first_name">სახელი</label>
+        </div>
+        <div class="input-group">
+            <input type="text" name="last_name" id="last_name" placeholder=" " required>
+            <label for="last_name">გვარი</label>
+        </div>
+        <div class="input-group">
+            <input type="number" name="age" id="age" placeholder=" " required>
+            <label for="age">ასაკი</label>
+        </div>
+        <div class="input-group">
+            <input type="password" name="password" id="password" placeholder=" " required>
+            <label for="password">პაროლი</label>
+        </div>
+        <div class="input-group">
+            <input type="password" name="confirm_password" id="confirm_password" placeholder=" " required>
+            <label for="confirm_password">გაიმეორეთ პაროლი</label>
+        </div>
+        <button type="submit">რეგისტრაცია</button>
+    </form>
+    <div class="form-footer">
+        <p>შეძინეთ ანგარიში? <a href="/login">შესვლა</a></p>
+    </div>
+</div>
+
+</body>
+</html>
+
+<!--2.დავალება: შექმენით Login form-ი (სადაც გექნებათ Gmail, პაროლი და submit-ი)-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>შესვლა</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+            font-weight: 500;
+        }
+        .input-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: border 0.3s;
+        }
+        .input-group input:focus {
+            border-color: #5fbae9;
+            outline: none;
+        }
+        .input-group label {
+            position: absolute;
+            top: 0;
+            left: 15px;
+            font-size: 14px;
+            color: #666;
+            transition: 0.3s;
+            pointer-events: none;
+        }
+        .input-group input:focus + label,
+        .input-group input:not(:placeholder-shown) + label {
+            top: -18px;
+            font-size: 12px;
+            color: #5fbae9;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #5fbae9;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #4a9ed8;
+        }
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .form-footer a {
+            color: #5fbae9;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>შესვლა</h2>
+    <form action="/submit_login" method="post">
+        <div class="input-group">
+            <input type="email" name="gmail" id="gmail" placeholder=" " required>
+            <label for="gmail">Gmail</label>
+        </div>
+        <div class="input-group">
+            <input type="password" name="password" id="password" placeholder=" " required>
+            <label for="password">პაროლი</label>
+        </div>
+        <button type="submit">შესვლა</button>
+    </form>
+    <div class="form-footer">
+        <p>გაიხსენა პაროლი? <a href="/forgot-password">დაგავიწყდა პაროლი?</a></p>
+    </div>
+</div>
+
+</body>
+</html>
