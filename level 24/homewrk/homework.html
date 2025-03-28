@@ -1,0 +1,162 @@
+<!--️2 შექმენით დიდი ვებსაიტი სადაც გამოიყენებთ css (ასევე გამოიყენეთ div ბლოკი)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>დიდი ვებსაიტი</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background: #4400ff;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 24px;
+        }
+        .nav {
+            background: rgba(23, 9, 216, 0);
+            padding: 15px;
+            text-align: center;
+        }
+        .nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .main-content {
+            flex: 2;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background: #ddd;
+        }
+        .footer {
+            background: #13049b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>დიდი ვებსაიტი</h1>
+        <p>ინფორმაციული და თანამედროვე დიზაინი</p>
+    </div>
+    <div class="nav">
+        <a href="#">მთავარი</a>
+        <a href="#">ჩვენ შესახებ</a>
+        <a href="#">სერვისები</a>
+        <a href="#">ბლოგი</a>
+        <a href="#">კონტაქტი</a>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <h2>მთავარი განყოფილება</h2>
+            <p>ეს არის დიდი ვებსაიტის შინაარსი...</p>
+        </div>
+        <div class="sidebar">
+            <h3>გვერდითი ზოლი</h3>
+            <p>დამატებითი ინფორმაცია...</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 ყველა უფლება დაცულია</p>
+    </div>
+</body>
+</html>
+
+
+
+<!-- 4 შექმენი პროექტი, სადაც div-ები გამოიყენება ნებისმიერი სექციის გამოყოფისთვის (Header, 
+Nav, Article, Footer)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div-ბლოკებით სტრუქტურირებული გვერდი</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header, .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .main {
+            display: flex;
+            margin: 20px;
+        }
+        .article {
+            flex: 2;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ვებსაიტის სათაური</h1>
+    </div>
+    <div class="nav">
+        <a href="#">მთავარი</a>
+        <a href="#">ბლოგი</a>
+        <a href="#">კონტაქტი</a>
+    </div>
+    <div class="main">
+        <div class="article">
+            <h2>მთავარი სტატია</h2>
+            <p>აქ განთავსებულია ძირითადი ინფორმაცია...</p>
+        </div>
+        <div class="sidebar">
+            <h3>გვერდითი ზოლი</h3>
+            <p>დამატებითი ინფორმაცია და ბმულები...</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 ყველა უფლება დაცულია</p>
+    </div>
+</body>
+</html>
