@@ -1,11 +1,15 @@
-<!--️2 შექმენით დიდი ვებსაიტი სადაც გამოიყენებთ css (ასევე გამოიყენეთ div ბლოკი)-->
+<!--️2 შექმენით დიდი ვებსაიტი სადაც გამოიყენებთ css (ასევე გამოიყენეთ div ბლოკი)
+გაერთიანებული ორივე
+3️ შექმენი პროექტი, სადაც div-ები გამოიყენება ნებისმიერი სექციის გამოყოფისთვის (Header, 
+Nav, Article, Footer-->
+
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>დიდი ვებსაიტი</title>
+    <title>ჩემი ვებსაიტი</title>
     <style>
         * {
             margin: 0;
@@ -58,8 +62,8 @@
 </head>
 <body>
     <div class="header">
-        <h1>დიდი ვებსაიტი</h1>
-        <p>ინფორმაციული და თანამედროვე დიზაინი</p>
+        <h1> ვებსაიტი</h1>
+        
     </div>
     <div class="nav">
         <a href="#">მთავარი</a>
@@ -71,7 +75,7 @@
     <div class="container">
         <div class="main-content">
             <h2>მთავარი განყოფილება</h2>
-            <p>ეს არის დიდი ვებსაიტის შინაარსი...</p>
+            <p>ეს არის  ვებსაიტის შინაარსი...</p>
         </div>
         <div class="sidebar">
             <h3>გვერდითი ზოლი</h3>
@@ -79,84 +83,23 @@
         </div>
     </div>
     <div class="footer">
-        <p>&copy; 2025 ყველა უფლება დაცულია</p>
+        <p>&copy; 2025 დავალება</p>
     </div>
 </body>
 </html>
 
+<!--4️ ახსენი თქვენი სიტყვებით რა არის inline და block element'ს-->
+
+<!--Block ელემენტი:
+იკავებს მთელ სიგანეს და იწყებს ახალ ხაზზე.მაგალითად: <div>, <p>, <h1>,
+<section>, <article>ეს ელემენტები ჩვეულებრივ იყენებენ სიგრძესა და სიმაღლეს.
+Inline ელემენტი:
+მხოლოდ იმ ადგილს იკავებს, რამდენიც შიგთავსს სჭირდება.მაგალითად: <span>,
+<a>, <strong>, <em>ისინი არ იწყებენ ახალ ხაზზე და მათი სიგანე დამოკიდებულია შიგთავსზე.-->
 
 
-<!-- 4 შექმენი პროექტი, სადაც div-ები გამოიყენება ნებისმიერი სექციის გამოყოფისთვის (Header, 
-Nav, Article, Footer)-->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Div-ბლოკებით სტრუქტურირებული გვერდი</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .header, .footer {
-            background: #222;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        .nav {
-            background: #444;
-            padding: 10px;
-            text-align: center;
-        }
-        .nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        .main {
-            display: flex;
-            margin: 20px;
-        }
-        .article {
-            flex: 2;
-            padding: 20px;
-            background: #f4f4f4;
-        }
-        .sidebar {
-            flex: 1;
-            padding: 20px;
-            background: #ddd;
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <h1>ვებსაიტის სათაური</h1>
-    </div>
-    <div class="nav">
-        <a href="#">მთავარი</a>
-        <a href="#">ბლოგი</a>
-        <a href="#">კონტაქტი</a>
-    </div>
-    <div class="main">
-        <div class="article">
-            <h2>მთავარი სტატია</h2>
-            <p>აქ განთავსებულია ძირითადი ინფორმაცია...</p>
-        </div>
-        <div class="sidebar">
-            <h3>გვერდითი ზოლი</h3>
-            <p>დამატებითი ინფორმაცია და ბმულები...</p>
-        </div>
-    </div>
-    <div class="footer">
-        <p>&copy; 2025 ყველა უფლება დაცულია</p>
-    </div>
-</body>
-</html>
+<!--5️ ახსენით თქვენი სიტყვებით რა არის div -->
+<!--div არის Block ელემენტი, რომელიც გამოიყენება ვებსაიტის სტრუქტურის შესაქმნელად
+მას არ აქვს განსაზღვრული სტილი, მაგრამ CSS-ით შეგვიძლია ფორმატირება
+div ხშირად გამოიყენება სხვადასხვა სექციების გამოყოფისთვის, როგორიცაა 
+Header, Sidebar, Content, Footer.-->

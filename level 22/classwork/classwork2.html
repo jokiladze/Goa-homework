@@ -1,0 +1,84 @@
+<!--1) შექმენით ვებსაიტი, სადაც გამოყენებული გექნებათ შემდეგი თეგები: 
+header, main, footer, aside, article, section. არც ერთი ეს ელემენტი არ უნდა იყოს ცარიელი-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>ჩემი ვებგვერდი</title>
+  <style>
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #3498db;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      display: flex;
+      margin: 20px;
+      gap: 20px;
+    }
+    article {
+      flex: 2;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    aside {
+      flex: 1;
+      background-color: #e2e2e2;
+      padding: 20px;
+      border: 1px solid #bbb;
+    }
+    section {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>მთავარი სათაური</h1>
+    <p>ეს არის header-ს შიგნით არსებული ინფორმაცია, .</p>
+  </header>
+  
+  <main>
+    <article>
+      <h2>სტატიის სათაური</h2>
+      <p>
+        ეს არის სტატიის ძირითადი შინაარსი. 
+      </p>
+      <section>
+        <h3>განყოფილება სტატიის შიგნით</h3>
+        <p>
+          აქ არის დამატებითი ინფორმაცია 
+      </section>
+    </article>
+    
+    <aside>
+      <h2>ჩართვა გვერდის გარდა</h2>
+      <p>
+        აქ შეგიძლიათ ჩასმა დამატებითი რესურსები,
+      </p>
+    </aside>
+  </main>
+  
+  <footer>
+    <p>Copyright © 2025. დავალება.</p>
+    <p>დაგვიკავშირდით: info@example.com</p>
+  </footer>
+</body>
+</html>
